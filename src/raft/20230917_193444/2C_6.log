@@ -1,0 +1,3 @@
+/opt/homebrew/Cellar/go/1.19.3/libexec/pkg/tool/darwin_arm64/link: signal: interrupt
+/opt/homebrew/Cellar/go/1.19.3/libexec/pkg/tool/darwin_arm64/vet: signal: interrupt
+FAIL	6.5840/raft [build failed]

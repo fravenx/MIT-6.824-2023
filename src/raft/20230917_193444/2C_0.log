@@ -1,0 +1,2 @@
+go: error obtaining buildID for go tool compile: signal: interrupt
+go: failed to remove work dir: unlinkat /var/folders/cp/2wsx32gj6rng27clv_1lm_d40000gn/T/go-build1292212035: directory not empty

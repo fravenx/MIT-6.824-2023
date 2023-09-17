@@ -1,0 +1,313 @@
+2376471 VOTE S2 electionTimer
+2376471 VOTE S2 reset electionTimer
+2376471 VOTE S2 Term 1 starts getting votes
+2376471 VOTE S2 sendRequestVote index = 0 term = 0 to S1
+2376472 VOTE S2 sendRequestVote index = 0 term = 0 to S0
+2376472 VOTE S1 Term 0 gets Requestvote from Candidate 2 Term 1
+2376472 VOTE S1 vote for S2
+2376472 LOG2 S1 log = [{0 0 0}]
+2376472 VOTE S1 reset electionTimer
+2376472 VOTE S0 Term 0 gets Requestvote from Candidate 2 Term 1
+2376473 VOTE S0 vote for S2
+2376473 VOTE S2 become leader log = [{0 0 0}]
+2376473 LOG2 S0 log = [{0 0 0}]
+2376473 VOTE S0 reset electionTimer
+2376516 LOG1 S2 append log 8290618719311628456 at 1
+2376576 LOG1 S2 sendAppendRpc pIndex = 0 entries num = 1 to S1
+2376576 LOG1 S2 sendAppendRpc pIndex = 0 entries num = 1 to S0
+2376577 VOTE S1 reset electionTimer
+2376577 LOG2 S1 add {1 1 8290618719311628456} int log
+2376577 VOTE S0 reset electionTimer
+2376577 LOG2 S0 add {1 1 8290618719311628456} int log
+2376577 LOG1 S2 set matchIndex[1] to 1
+2376577 LOG1 S2 update commitIndex to 1
+2376577 LOG1 S2 set matchIndex[0] to 1
+2376577 CMIT S2 apply {1 1 8290618719311628456}
+2377690 LOG1 S2 sendHeartBeat pIndex = 1 to S1
+2377690 LOG1 S2 sendHeartBeat pIndex = 1 to S0
+2377691 VOTE S1 reset electionTimer
+2377691 LOG2 S1 update commitIndex to 1
+2377691 VOTE S0 reset electionTimer
+2377691 LOG2 S0 update commitIndex to 1
+2377691 CMIT S1 apply {1 1 8290618719311628456}
+2377691 CMIT S0 apply {1 1 8290618719311628456}
+2377770 LOG1 S2 append log 1331119482065363618 at 2
+2378756 LOG1 S2 sendAppendRpc pIndex = 1 entries num = 1 to S1
+2378757 LOG1 S2 sendAppendRpc pIndex = 1 entries num = 1 to S0
+2378758 VOTE S1 reset electionTimer
+2378758 LOG2 S1 add {2 1 1331119482065363618} int log
+2378758 LOG1 S2 set matchIndex[1] to 2
+2378759 LOG1 S2 update commitIndex to 2
+2378759 CMIT S2 apply {2 1 1331119482065363618}
+2378759 VOTE S0 reset electionTimer
+2378759 LOG2 S0 add {2 1 1331119482065363618} int log
+2378759 LOG1 S2 set matchIndex[0] to 2
+2379768 LOG1 S2 sendHeartBeat pIndex = 2 to S1
+2379769 VOTE S1 reset electionTimer
+2379769 LOG2 S1 update commitIndex to 2
+2379769 LOG1 S2 sendHeartBeat pIndex = 2 to S0
+2379770 VOTE S0 reset electionTimer
+2379770 LOG2 S0 update commitIndex to 2
+2379770 CMIT S1 apply {2 1 1331119482065363618}
+2379770 CMIT S0 apply {2 1 1331119482065363618}
+2379846 LOG1 S2 append log 8992375123819870339 at 3
+2380824 LOG1 S2 sendAppendRpc pIndex = 2 entries num = 1 to S1
+2380825 LOG1 S2 sendAppendRpc pIndex = 2 entries num = 1 to S0
+2380826 VOTE S1 reset electionTimer
+2380826 LOG2 S1 add {3 1 8992375123819870339} int log
+2380826 VOTE S0 reset electionTimer
+2380826 LOG2 S0 add {3 1 8992375123819870339} int log
+2380826 LOG1 S2 set matchIndex[1] to 3
+2380827 LOG1 S2 update commitIndex to 3
+2380827 LOG1 S2 set matchIndex[0] to 3
+2380827 CMIT S2 apply {3 1 8992375123819870339}
+2381896 LOG1 S2 sendHeartBeat pIndex = 3 to S1
+2381897 LOG1 S2 sendHeartBeat pIndex = 3 to S0
+2381897 VOTE S1 reset electionTimer
+2381897 LOG2 S1 update commitIndex to 3
+2381897 VOTE S0 reset electionTimer
+2381897 LOG2 S0 update commitIndex to 3
+2381897 CMIT S1 apply {3 1 8992375123819870339}
+2381897 CMIT S0 apply {3 1 8992375123819870339}
+2381904 LOG1 S2 append log 7702058277667854670 at 4
+2382976 LOG1 S2 sendAppendRpc pIndex = 3 entries num = 1 to S1
+2382976 LOG1 S2 sendAppendRpc pIndex = 3 entries num = 1 to S0
+2382977 VOTE S1 reset electionTimer
+2382977 LOG2 S1 add {4 1 7702058277667854670} int log
+2382977 VOTE S0 reset electionTimer
+2382978 LOG2 S0 add {4 1 7702058277667854670} int log
+2382978 LOG1 S2 set matchIndex[1] to 4
+2382978 LOG1 S2 update commitIndex to 4
+2382978 LOG1 S2 set matchIndex[0] to 4
+2382978 CMIT S2 apply {4 1 7702058277667854670}
+2384032 LOG1 S2 sendHeartBeat pIndex = 4 to S1
+2384034 LOG1 S2 sendHeartBeat pIndex = 4 to S0
+2384035 VOTE S1 reset electionTimer
+2384035 LOG2 S1 update commitIndex to 4
+2384035 VOTE S0 reset electionTimer
+2384036 LOG2 S0 update commitIndex to 4
+2384036 CMIT S1 apply {4 1 7702058277667854670}
+2384036 CMIT S0 apply {4 1 7702058277667854670}
+2384246 LOG1 S2 append log 6261276021039444899 at 5
+2385102 LOG1 S2 sendAppendRpc pIndex = 4 entries num = 1 to S1
+2385103 LOG1 S2 sendAppendRpc pIndex = 4 entries num = 1 to S0
+2385104 VOTE S1 reset electionTimer
+2385104 LOG2 S1 add {5 1 6261276021039444899} int log
+2385104 LOG1 S2 set matchIndex[1] to 5
+2385104 LOG1 S2 update commitIndex to 5
+2385104 CMIT S2 apply {5 1 6261276021039444899}
+2385104 VOTE S0 reset electionTimer
+2385104 LOG2 S0 add {5 1 6261276021039444899} int log
+2385105 LOG1 S2 set matchIndex[0] to 5
+2386166 LOG1 S2 sendHeartBeat pIndex = 5 to S1
+2386167 VOTE S1 reset electionTimer
+2386167 LOG2 S1 update commitIndex to 5
+2386168 LOG1 S2 sendHeartBeat pIndex = 5 to S0
+2386168 VOTE S0 reset electionTimer
+2386168 LOG2 S0 update commitIndex to 5
+2386169 CMIT S1 apply {5 1 6261276021039444899}
+2386169 CMIT S0 apply {5 1 6261276021039444899}
+2386318 LOG1 S2 append log 5387983227138693546 at 6
+2387258 LOG1 S2 sendAppendRpc pIndex = 5 entries num = 1 to S1
+2387259 LOG1 S2 sendAppendRpc pIndex = 5 entries num = 1 to S0
+2387259 VOTE S1 reset electionTimer
+2387260 LOG2 S1 add {6 1 5387983227138693546} int log
+2387260 VOTE S0 reset electionTimer
+2387260 LOG2 S0 add {6 1 5387983227138693546} int log
+2387260 LOG1 S2 set matchIndex[1] to 6
+2387261 LOG1 S2 update commitIndex to 6
+2387261 LOG1 S2 set matchIndex[0] to 6
+2387261 CMIT S2 apply {6 1 5387983227138693546}
+2388337 LOG1 S2 sendHeartBeat pIndex = 6 to S1
+2388339 LOG1 S2 sendHeartBeat pIndex = 6 to S0
+2388339 VOTE S1 reset electionTimer
+2388340 LOG2 S1 update commitIndex to 6
+2388340 VOTE S0 reset electionTimer
+2388341 LOG2 S0 update commitIndex to 6
+2388341 CMIT S1 apply {6 1 5387983227138693546}
+2388341 CMIT S0 apply {6 1 5387983227138693546}
+2388443 LOG1 S2 append log 311380195337332452 at 7
+2389420 LOG1 S2 sendAppendRpc pIndex = 6 entries num = 1 to S1
+2389421 VOTE S1 reset electionTimer
+2389421 LOG2 S1 add {7 1 311380195337332452} int log
+2389421 LOG1 S2 sendAppendRpc pIndex = 6 entries num = 1 to S0
+2389421 LOG1 S2 set matchIndex[1] to 7
+2389421 LOG1 S2 update commitIndex to 7
+2389421 CMIT S2 apply {7 1 311380195337332452}
+2389422 VOTE S0 reset electionTimer
+2389422 LOG2 S0 add {7 1 311380195337332452} int log
+2389422 LOG1 S2 set matchIndex[0] to 7
+2390517 LOG1 S2 sendHeartBeat pIndex = 7 to S1
+2390517 LOG1 S2 sendHeartBeat pIndex = 7 to S0
+2390518 VOTE S1 reset electionTimer
+2390518 LOG2 S1 update commitIndex to 7
+2390518 CMIT S1 apply {7 1 311380195337332452}
+2390519 VOTE S0 reset electionTimer
+2390519 LOG2 S0 update commitIndex to 7
+2390519 CMIT S0 apply {7 1 311380195337332452}
+2390732 LOG1 S2 append log 2885883366439701399 at 8
+2391585 LOG1 S2 sendAppendRpc pIndex = 7 entries num = 1 to S1
+2391586 LOG1 S2 sendAppendRpc pIndex = 7 entries num = 1 to S0
+2391586 VOTE S1 reset electionTimer
+2391586 LOG2 S1 add {8 1 2885883366439701399} int log
+2391586 VOTE S0 reset electionTimer
+2391587 LOG2 S0 add {8 1 2885883366439701399} int log
+2391587 LOG1 S2 set matchIndex[1] to 8
+2391587 LOG1 S2 update commitIndex to 8
+2391587 CMIT S2 apply {8 1 2885883366439701399}
+2391587 LOG1 S2 set matchIndex[0] to 8
+2392698 LOG1 S2 sendHeartBeat pIndex = 8 to S1
+2392728 VOTE S1 reset electionTimer
+2392728 LOG2 S1 update commitIndex to 8
+2392729 LOG1 S2 sendHeartBeat pIndex = 8 to S0
+2392729 VOTE S0 reset electionTimer
+2392729 LOG2 S0 update commitIndex to 8
+2392729 CMIT S1 apply {8 1 2885883366439701399}
+2392730 CMIT S0 apply {8 1 2885883366439701399}
+2392810 LOG1 S2 append log 7402621203203265396 at 9
+2393761 LOG1 S2 sendAppendRpc pIndex = 8 entries num = 1 to S1
+2393762 VOTE S1 reset electionTimer
+2393762 LOG2 S1 add {9 1 7402621203203265396} int log
+2393762 LOG1 S2 sendAppendRpc pIndex = 8 entries num = 1 to S0
+2393763 LOG1 S2 set matchIndex[1] to 9
+2393763 LOG1 S2 update commitIndex to 9
+2393764 CMIT S2 apply {9 1 7402621203203265396}
+2393764 SNAP S2 snapshots to 9 log[9 - 9]
+2393764 VOTE S0 reset electionTimer
+2393764 LOG2 S0 add {9 1 7402621203203265396} int log
+2394829 LOG1 S2 sendHeartBeat pIndex = 9 to S1
+2394830 TRCE S2 sendInstallSnapshot lastIndex = 9 to S0
+2394831 VOTE S0 reset electionTimer
+2394831 TRCE S0 getInstallSnapshot set lastApplied = 9
+2394831 SNAP S0 snapshots to 9 log[9 - 9]
+2394830 VOTE S1 reset electionTimer
+2394831 LOG2 S1 update commitIndex to 9
+2394831 CMIT S1 apply {9 1 7402621203203265396}
+2394832 SNAP S1 snapshots to 9 log[9 - 9]
+2394925 LOG1 S2 append log 4647210708565803836 at 10
+2395893 LOG1 S2 sendAppendRpc pIndex = 9 entries num = 1 to S1
+2395894 LOG1 S2 sendAppendRpc pIndex = 9 entries num = 1 to S0
+2395895 VOTE S1 reset electionTimer
+2395895 LOG2 S1 add {10 1 4647210708565803836} int log
+2395895 VOTE S0 reset electionTimer
+2395895 LOG2 S0 add {10 1 4647210708565803836} int log
+2395895 LOG1 S2 set matchIndex[1] to 10
+2395895 LOG1 S2 update commitIndex to 10
+2395895 LOG1 S2 set matchIndex[0] to 10
+2395895 CMIT S2 apply {10 1 4647210708565803836}
+2396944 LOG1 S2 sendHeartBeat pIndex = 10 to S1
+2396944 LOG1 S2 sendHeartBeat pIndex = 10 to S0
+2396945 VOTE S1 reset electionTimer
+2396945 LOG2 S1 update commitIndex to 10
+2396945 VOTE S0 reset electionTimer
+2396945 LOG2 S0 update commitIndex to 10
+2396946 CMIT S1 apply {10 1 4647210708565803836}
+2396946 CMIT S0 apply {10 1 4647210708565803836}
+2397041 LOG1 S2 append log 4337006064047321833 at 11
+2398009 LOG1 S2 sendAppendRpc pIndex = 10 entries num = 1 to S1
+2398009 LOG1 S2 sendAppendRpc pIndex = 10 entries num = 1 to S0
+2398010 VOTE S1 reset electionTimer
+2398010 LOG2 S1 add {11 1 4337006064047321833} int log
+2398010 VOTE S0 reset electionTimer
+2398010 LOG2 S0 add {11 1 4337006064047321833} int log
+2398010 LOG1 S2 set matchIndex[1] to 11
+2398011 LOG1 S2 update commitIndex to 11
+2398011 CMIT S2 apply {11 1 4337006064047321833}
+2398011 LOG1 S2 set matchIndex[0] to 11
+2399089 LOG1 S2 sendHeartBeat pIndex = 11 to S1
+2399090 LOG1 S2 sendHeartBeat pIndex = 11 to S0
+2399091 VOTE S0 reset electionTimer
+2399091 LOG2 S0 update commitIndex to 11
+2399090 VOTE S1 reset electionTimer
+2399092 LOG2 S1 update commitIndex to 11
+2399091 CMIT S0 apply {11 1 4337006064047321833}
+2399092 CMIT S1 apply {11 1 4337006064047321833}
+2399122 LOG1 S2 append log 7842490269531297754 at 12
+2400182 LOG1 S2 sendAppendRpc pIndex = 11 entries num = 1 to S1
+2400183 LOG1 S2 sendAppendRpc pIndex = 11 entries num = 1 to S0
+2400184 VOTE S0 reset electionTimer
+2400184 VOTE S1 reset electionTimer
+2400184 LOG2 S1 add {12 1 7842490269531297754} int log
+2400184 LOG2 S0 add {12 1 7842490269531297754} int log
+2400184 LOG1 S2 set matchIndex[1] to 12
+2400184 LOG1 S2 update commitIndex to 12
+2400184 CMIT S2 apply {12 1 7842490269531297754}
+2400185 LOG1 S2 set matchIndex[0] to 12
+2401210 LOG1 S2 sendHeartBeat pIndex = 12 to S1
+2401211 VOTE S1 reset electionTimer
+2401211 LOG2 S1 update commitIndex to 12
+2401212 LOG1 S2 sendHeartBeat pIndex = 12 to S0
+2401212 VOTE S0 reset electionTimer
+2401212 LOG2 S0 update commitIndex to 12
+2401212 CMIT S1 apply {12 1 7842490269531297754}
+2401212 CMIT S0 apply {12 1 7842490269531297754}
+2401412 LOG1 S2 append log 4288077684204887344 at 13
+2402270 LOG1 S2 sendAppendRpc pIndex = 12 entries num = 1 to S1
+2402270 LOG1 S2 sendAppendRpc pIndex = 12 entries num = 1 to S0
+2402271 VOTE S1 reset electionTimer
+2402271 LOG2 S1 add {13 1 4288077684204887344} int log
+2402272 VOTE S0 reset electionTimer
+2402272 LOG2 S0 add {13 1 4288077684204887344} int log
+2402272 LOG1 S2 set matchIndex[1] to 13
+2402272 LOG1 S2 update commitIndex to 13
+2402272 CMIT S2 apply {13 1 4288077684204887344}
+2402272 LOG1 S2 set matchIndex[0] to 13
+2403281 LOG1 S2 sendHeartBeat pIndex = 13 to S1
+2403282 VOTE S1 reset electionTimer
+2403282 LOG2 S1 update commitIndex to 13
+2403282 LOG1 S2 sendHeartBeat pIndex = 13 to S0
+2403283 VOTE S0 reset electionTimer
+2403283 LOG2 S0 update commitIndex to 13
+2403283 CMIT S1 apply {13 1 4288077684204887344}
+2403283 CMIT S0 apply {13 1 4288077684204887344}
+2403284 TRCE S0 alive now
+2403285 TRCE S1 alive now
+2403285 TRCE S2 alive now
+2411589 VOTE S2 electionTimer
+2411592 VOTE S2 reset electionTimer
+2411593 VOTE S2 Term 2 starts getting votes
+2411593 VOTE S2 sendRequestVote index = 13 term = 1 to S1
+2411593 VOTE S2 sendRequestVote index = 13 term = 1 to S0
+2411595 VOTE S1 Term 1 gets Requestvote from Candidate 2 Term 2
+2411595 VOTE S1 vote for S2
+2411595 LOG2 S1 log = [{9 1 7402621203203265396} {10 1 4647210708565803836} {11 1 4337006064047321833} {12 1 7842490269531297754} {13 1 4288077684204887344}]
+2411595 VOTE S1 reset electionTimer
+2411596 VOTE S2 become leader log = [{9 1 7402621203203265396} {10 1 4647210708565803836} {11 1 4337006064047321833} {12 1 7842490269531297754} {13 1 4288077684204887344}]
+2411596 VOTE S0 Term 1 gets Requestvote from Candidate 2 Term 2
+2411596 VOTE S0 vote for S2
+2411596 LOG2 S0 log = [{9 1 <nil>} {10 1 4647210708565803836} {11 1 4337006064047321833} {12 1 7842490269531297754} {13 1 4288077684204887344}]
+2411596 VOTE S0 reset electionTimer
+2411701 LOG1 S2 sendHeartBeat pIndex = 13 to S1
+2411702 LOG1 S2 sendHeartBeat pIndex = 13 to S0
+2411702 VOTE S1 reset electionTimer
+2411702 VOTE S0 reset electionTimer
+2411702 LOG1 S2 set matchIndex[1] to 13
+2411703 LOG1 S2 set matchIndex[0] to 13
+2411921 LOG1 S2 append log 2375224507000936312 at 14
+2412763 LOG1 S2 sendAppendRpc pIndex = 13 entries num = 1 to S1
+2412764 VOTE S1 reset electionTimer
+2412765 LOG2 S1 add {14 2 2375224507000936312} int log
+2412765 LOG1 S2 sendAppendRpc pIndex = 13 entries num = 1 to S0
+2412766 VOTE S0 reset electionTimer
+2412766 LOG2 S0 add {14 2 2375224507000936312} int log
+2412766 LOG1 S2 set matchIndex[1] to 14
+2412766 LOG1 S2 update commitIndex to 14
+2412766 LOG1 S2 set matchIndex[0] to 14
+2412766 CMIT S2 apply {10 1 4647210708565803836}
+2412766 CMIT S2 apply {11 1 4337006064047321833}
+2412767 CMIT S2 apply {12 1 7842490269531297754}
+2412767 CMIT S2 apply {13 1 4288077684204887344}
+2412767 CMIT S2 apply {14 2 2375224507000936312}
+2413824 LOG1 S2 sendHeartBeat pIndex = 14 to S1
+2413825 VOTE S1 reset electionTimer
+2413825 LOG2 S1 update commitIndex to 14
+2413826 LOG1 S2 sendHeartBeat pIndex = 14 to S0
+2413826 VOTE S0 reset electionTimer
+2413826 LOG2 S0 update commitIndex to 14
+2413826 CMIT S1 apply {10 1 4647210708565803836}
+2413826 CMIT S1 apply {11 1 4337006064047321833}
+2413826 CMIT S1 apply {12 1 7842490269531297754}
+2413826 CMIT S1 apply {13 1 4288077684204887344}
+2413827 CMIT S1 apply {14 2 2375224507000936312}
+2413827 CMIT S0 apply {10 1 4647210708565803836}
+2413827 CMIT S0 apply {11 1 4337006064047321833}
